@@ -1,0 +1,92 @@
+/*Google fonts*/
+@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&display=swap");
+/*cursor for body for the magical vibe*/
+* {
+    cursor: url("https://cur.cursors-4u.net/user/use-1/use160.cur"), auto;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #0e0b16;
+    color: #f5e9d8;
+    font-family: 'Cinzel Decorative', serif;
+    text-align: center;
+    padding-top: 60px;
+}
+
+/*heading*/
+h1 {
+    font-size: 3rem;
+    letter-spacing: 2px;
+    color: #ffcc00;
+    text-shadow: 0 0 10px gold, 0 0 25px #c59b06, 0 0 50px #ffdd55;
+    animation: glow 3s infinite alternate;
+}
+
+@keyframes glow {
+    0% {text-shadow: 0 0 8px #b8860b;}
+    100% {text-shadow: 0 0 25px #ffd700, 0 0 50px goldenrod;}
+}
+
+/*styling Input box*/
+input {
+    padding: 12px;
+    width: 260px;
+    font-size: 1rem;
+    font-family: 'Cinzel Decorative', serif;
+    text-align: center;
+    border: 2px solid goldenrod;
+    border-radius: 8px;
+    height: 30.3px;
+    background: rgba(255, 248, 220, 0.12);
+    color: #f5e9d8;
+    outline: none;
+    transition: 0.3s ease;
+}
+
+/*focus (after clicked with cursor*/
+input:focus {
+    box-shadow: 0 0 5px goldenrod, 0 0 30px goldenrod;
+    transform: scale(1);
+}
+
+/*styling placeholder*/
+input::placeholder {
+    color: #bfa77a;
+    font-style: italic;
+}
+
+/*Button*/
+button {
+    margin-top: 18px;
+    padding: 12px 30px;
+    font-size: 1.3rem;
+    font-family: 'Cinzel Decorative', serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, #b8860b, #ffd700);
+    border-radius: 8px;
+    transition: 0.3s ease;
+}
+
+
+/*button hover*/
+button:hover {
+    transform: scale(1.10);
+    box-shadow: 0 5px 25px goldenrod;
+}
+
+/*paragraph*/
+p {
+    margin-top: 18px;
+    font-size: 1.4rem;
+}
+/*Hogwarts allowance remaining*/
+#guesscount {
+    animation: flicker 2.5s infinite;
+}
+@keyframes flicker {
+    0%, 100% {opacity: 1; text-shadow: 0 0 10px goldenrod;}
+    50% {opacity: 0.7; text-shadow: 0 0 25px  #ffe787;}
+}
